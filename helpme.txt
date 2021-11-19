@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Please type a command" //prompt user        
+read cmd_in
+
+
+if grep -q $cmd_in mandatabase.txt; then //command can be found
+     grep $cmd_in mandatabase.txt;
+else
+     echo "Sorry I cannot help you. No such command found" //command could not 
+        be found
+
+fi
